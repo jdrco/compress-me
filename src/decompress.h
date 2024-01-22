@@ -3,6 +3,6 @@
 
 #include <stdlib.h>
 
-void byte_decompress(unsigned char *data_ptr, int compressed_size);
+int byte_decompress(unsigned char *data_ptr, int compressed_size);
 
 #endif // DECOMPRESS_H

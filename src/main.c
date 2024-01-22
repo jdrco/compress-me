@@ -15,15 +15,15 @@ int main() {
                           0x56, 0x45, 0x56, 0x56, 0x56, 0x09, 0x09, 0x09};
   int data_size = 24;
 
-  printf("Original Data:\t\t");
+  printf("Original Data (size: %d):\t", data_size);
   print_data(data, data_size);
 
-  int new_size = byte_compress(data, data_size);
-  printf("Compressed Data:\t");
-  print_data(data, new_size);
+  int compressed_size = byte_compress(data, data_size);
+  printf("Compressed Data (size: %d):\t", compressed_size);
+  print_data(data, compressed_size);
 
-  byte_decompress(data, new_size);
-  printf("Decompressed Data:\t");
+  int decompressed_size = byte_decompress(data, compressed_size);
+  printf("Decompressed Data (size: %d):\t", decompressed_size);
   print_data(data, data_size);
 
   return 0;
