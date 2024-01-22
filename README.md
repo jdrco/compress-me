@@ -1,6 +1,6 @@
 # CompressMe
 
-CompressMe is a simple data compression and decompression project implemented in `C`. It utilizes a basic form of Run-Length Encoding (RLE) to compress sequences of repeating bytes, making it suitable for data with repetitive patterns.
+CompressMe is a simple data compression and decompression project implemented in `C`. It utilizes a basic form of Run-Length Encoding (RLE) making it suitable for data with repetitive patterns.
 <img width="1439" alt="Screenshot 2024-01-21 at 9 48 54 PM" src="https://github.com/jdrco/compress-me/assets/83478026/da5544ac-669c-4dde-8d07-22ba9320b6d6">
 
 ## Algorithm Explanation
@@ -42,7 +42,8 @@ This process reconstructs the original uncompressed data from its compressed for
 ## Running the Program
 
 ### Prerequisites
-Ensure you have `gcc` or any standard `C` compiler for compiling the project and `CMake` (optional).
+- Work in a `Linux/Unix/MacOS` environment.
+- Ensure you have `gcc` or any standard `C` compiler for compiling the project and `CMake` (optional).
 
 ### Using CMake
 ```
